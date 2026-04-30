@@ -61,8 +61,164 @@ function Navbar(){
               strokewidth={2}
               d="m21 211-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-
             </div>
+
+            {/*Search Result dropdown condition rendering*/}
+            <div className="absolute mt-2 w-72 bg-neutral-800 rounded-lg shadow-lg overflow-hidden z-50">
+              <ul className="divide-y divide-neutral-700">
+                <li className="hover:bg-neutral-700">
+                  <button className="Flex items-center p-3 w-full text-left">
+                    <div className="w-10 h-10 bg-neutral-700 rounded overflow-hidden flex-shrink-0">
+
+                      {/*Conditional Rendering*/}
+                      <img src="" alt="" className="w-full h-full object-cover"/>
+
+                      {/*else*/}
+                      <div className="w-full h-full flex items-center justify-center text-neutral-500 text-xs">{" "}
+                        No Image
+                      </div>
+
+                    </div>
+
+                    <div className="ml-3 flex-1">
+                      <p className="text-sm font-medium text-white truncate">
+                        Movie Title
+                      </p>
+                      <p className="text-xs text-neutral-400">
+                        Movies Release Date
+                      </p>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+             {/*Conditional Rendering*/}
+            <div className="absolute mt-2 w-72 bg-neutral-800 round-lg shadow-lg overflow-hidden z-50">
+              No movies found matching......
+            </div>
+           </div>
+        </div>
+
+        {/*Mobile Menu Button*/}
+        <div className="flex items-center md:hidden">
+          <button className="md:hidden text-white">
+          {/*Conditional Rendering*/}
+          <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+
+              <path strokeLinecap="round"
+              strokeLinejoin="round"
+              strokewidth={2}
+              d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+
+            {/*Else*/}
+           <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+
+         </button>
+        </div> 
+
+        {/*Mobile Navigation Conditional Rendering*/}
+        <div className="mt-4 pb-4 space-y-4 md:hidden">
+          <a href="#"
+          className="block text-white hover:text-purple-400 transition-colors py-2">
+            Home
+          </a>
+
+          <a href="#trending" 
+            className="text-white hover:text-purple-400 transition-all font-medium">
+              Trending
+          </a>
+
+          <a href="#popular" 
+            className="text-white hover:text-purple-400 transition-all font-medium">
+              Popular
+          </a>
+
+          <a href="#top-rated" 
+            className="text-white hover:text-purple-400 transition-all font-medium">
+              Top Rated
+          </a>
+          <div className="relative mt-3 search-container">
+            <input type="text" placeholder="search  movies...." className="bg-neutral-800/80 text-white px-4 py-2 rounded-full text-sm w-48 focus:w-64 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500/50"/>
+
+            {/*Conditional Rendering*/}
+            <div className="absolute right-3 top-2.5">
+              <svg className="w-4 h-4 text-neutral-400"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24">
+
+                  <circle className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"></circle>
+
+                  <path className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v8c5.373 00 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H8c8 3.042 1.135 5.824 3 7.93813-2.647z"></path>
+                </svg>
+
+                {/*Mobile Search Result Conditional Rendering*/}
+                <div className="absolute mt-2 w-full bg-neutral-800 rounded-lg shadow-lg overflow-hidden z-50">
+                  <ul className="divide-y divide-neutral-700">
+                    {/*Map method*/}
+                    <li className="hover:bg-neutral-700">
+                      <button className="flex items-center P-3 w-full text-left">
+                        <div className="w-10 h-14 bg-neutral-700 rounded-full overflow-hidden flex-shrink-0">
+                          {/*Conditional Rendering*/}
+                          <img 
+                            src=""
+                            alt=""
+                            className="w-full h-full object-cover"/>
+                            {/*else*/}
+                            <div className="w-full h-full flex items-center justify-center text-neutral-500 text-x5">
+                              No Image
+                            </div>
+                        </div>
+                         <div className="ml-3 flex-1">
+                          <p className="text-sm font-medium text-white truncate">
+                            Movies Title
+                          </p>
+                          <p className=" text-xs text-neutral-400">
+                            Movies release date
+                          </p>
+                         </div>
+
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                {/*Conditional Rendering*/}
+                <div className="absolute mt-2 w-full bg-neutral-800 rounded-lg shadow-lg shadow-lg overflow-hidden z-50">
+                  <div className="p-4 text-center text-neutral-400 text-sm">
+                    No movies found matching......
+                  </div>
+                
+                </div>
+            </div>
+
           </div>
         </div>
       </div>
