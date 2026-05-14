@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {fetchMovies} from "../services/api";
-import {MovieCard} from "../components/MovieCard";
+import {MovieCard} from "./MovieCard";
 
 export const Home=() => {
   const [movies, setMovies] = useState([]);

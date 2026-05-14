@@ -14,7 +14,7 @@ function HeroSection(){
            {/*Movies info*/}
           <div className={`transition-all duration-700`}>
             <div className="flex items-center space-x-3 mb-4">
-              <span className="bg purple-500/90 text-white text-xs font-semibold px-2 py-1 rounded-sm">
+              <span className="bg-purple-500/90 text-white text-xs font-semibold px-2 py-1 rounded-sm">
                 FEATURED
               </span>
 
@@ -25,9 +25,9 @@ function HeroSection(){
                   className="h-5 w-5 text-yellow-400"
                   viewBox="0 0 20 20"
                   fill="currentColor">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462C.969 8 1.371 1.24.588 1.811-2.8 2.034a1 1 0 00-.364 1.118L1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 Ol-2.8 2.034C-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
-                  <span>Movie Voting Average</span>
+                  <span className="text-neutral-300 text-sm">Movie Voting Average</span>
               </div>
                {/*Conditional Rendering Close*/}
                <span className="text-neutral-400">.</span>
@@ -35,14 +35,14 @@ function HeroSection(){
                 {/*Conditional Rendering*/}
                 <>
                 <span className="text-neutral-400">.</span>
-                <span className="bg-neutral-700 text-neutral-300 text-xs px-11.5 py-0.5">18+</span>
+                <span className="bg-neutral-700 text-neutral-300 text-xs px-2 py-0.5">18+</span>
                 </>
                 {/*Conditional Rendering Close*/} 
             </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Movies Title</h1>
-              <p className="text-neutral-300 text-base md:text-lg mb-8 line-clamp-3 md:line-clamp-4 max-w-21">Movie Overview</p>
-              <div className="flex flex-warp gap-4">
+              <p className="text-neutral-300 text-base md:text-lg mb-8 line-clamp-3 md:line-clamp-4 max-w-2xl">Movie Overview</p>
+              <div className="flex flex-wrap gap-4">
                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-all">
                     <svg 
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,9 +62,9 @@ function HeroSection(){
                     viewBox="0 0 20 20"
                     stroke="currentColor">
                         <path 
-                         stroke-linecap="round" 
-                         stroke-linejoin="round"
-                         stroke-width={2}
+                         strokeLinecap="round" 
+                         strokeLinejoin="round"
+                         strokeWidth={2}
                          d="M12 4v16m8-8H4" />
                     </svg>
                     Add to watch List
@@ -76,10 +76,10 @@ function HeroSection(){
       {/*Pagination*/}
       <div className="absolute bottom-10 left-0 flex justify-center gap-2 z-10">
         {/*Conditional Rendering*/}
-        <button className={`h-1.5 rounded-full transition-all`}>
+        <button className="text-white hover:text-purple-500 px-4 py-2 rounded-lg transition-all font-medium">
           Previous
         </button>
-        <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-all ml-2">
+        <button className="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg transition-all ml-2 font-medium">
           Next
         </button>
       </div>
