@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar';
 import MovieContent from './components/MovieContent';
 import HeroSection from './components/HeroSection';
+import MovieSlider from './components/MovieSlider';
+
 
 function App(){
   return (
@@ -9,7 +11,8 @@ function App(){
       <main>
          <MovieContent />
       </main>
-
+      <HeroSection/>
+      <MovieSlider/>
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Navbar(){
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 bg-white px-6 py-2 rounded-lg">
+          <nav className="hidden md:flex space-x-8">
             <a href="#home" className="text-gray-800 hover:text-purple-500 font-medium">Home</a>
             <a href="#trending" className="text-gray-800 hover:text-purple-500 font-medium">Trending</a>
             <a href="#popular" className="text-gray-800 hover:text-purple-500 font-medium">Popular</a>
